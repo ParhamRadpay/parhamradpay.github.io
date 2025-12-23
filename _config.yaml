@@ -1,0 +1,11 @@
+title: Parham Radpay
+description: Theoretical physics · random tensors · spin glasses
+author: Parham Radpay
+
+theme: minima
+
+header_pages:
+  - about.md
+  - research.md
+
+github_username: parhamradpay
