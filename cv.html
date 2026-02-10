@@ -1,41 +1,136 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
   <title>CV – Parham Radpay</title>
   <style>
     body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      font-family: "Merriweather", serif;
       max-width: 760px;
       margin: 60px auto;
       padding: 0 18px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
-    nav a { margin-right: 14px; }
+
+    nav a {
+      margin-right: 14px;
+    }
+
+    h1,
+    h2 {
+      font-weight: 700;
+    }
+
+    .muted {
+      color: #666;
+      margin-top: 6px;
+      font-weight: 300;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    .section {
+      margin-top: 28px;
+    }
+
+    .item-title {
+      font-weight: 700;
+    }
+
+    .item-meta {
+      color: #666;
+      font-weight: 300;
+    }
+
+    .tight li {
+      margin-bottom: 8px;
+    }
   </style>
 </head>
+
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="cv.html">CV</a>
-</nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="cv.html">CV</a>
+  </nav>
 
-<h1>Curriculum Vitae</h1>
+  <h1>Curriculum Vitae</h1>
 
-<h2>Education</h2>
-<p>PhD in Theoretical Physics, Université Paris-Saclay, 2023–2026.</p>
 
-<h2>Publications</h2>
-<ul>
-  <li>paper 1</li>
-  <li>paper 2</li>
-</ul>
+  <div class="section">
+    <h2>Education</h2>
+    <ul class="tight">
+      <li>
+        <span class="item-title">Ph.D. in Mathematical Physics</span>
+        <span class="item-meta"> (Feb. 2023 – present)</span><br>
+        CEA &amp; Université Paris-Saclay, France<br>
+        Advisor: Vincent Rivasseau
+      </li>
+      <li>
+        <span class="item-title">M.Sc. in Physics</span>
+        <span class="item-meta"> (Apr. 2020 – Sept. 2022)</span><br>
+        Ruprecht-Karl-Universität Heidelberg, Germany<br>
+        Master thesis: "Polyakov loops on classical-statistical lattices"
+      </li>
+      <li>
+        <span class="item-title">B.Sc. in Physics</span>
+        <span class="item-meta"> (Oct. 2016 – Mar. 2020)</span><br>
+        Ruprecht-Karl-Universität Heidelberg, Germany<br>
+        Bachelor thesis: "Dual structure of statistical manifolds as affine immersions"
+      </li>
+    </ul>
+  </div>
 
-<h2>Full CV</h2>
-<p><a href="CV.pdf">Download PDF version</a></p>
+  <div class="section">
+    <h2>Publications</h2>
+    <ul class="tight">
+      <li>S. Dartois and P. Radpay. "On the injective norm of random fermionic states and skew-symmetric tensors."
+        arXiv:2510.25474 (2025).</li>
+      <li>I. Achitouv, V. Lahoche, D. Ousmane Samary, and P. Radpay. "Constructing the low-temperature phase diagram for
+        the 2+p-quantum spin glass using the nonperturbative renormalization group." arXiv:2503.12247 (2025).</li>
+      <li>V. Lahoche, D. Ousmane Samary, and P. Radpay. "The quantum p-spin renormalization group in the large N limit
+        as a benchmark for functional renormalization group." J. Stat. Mech. (2025) 093301.</li>
+      <li>I. Achitouv, V. Lahoche, D. Ousmane Samary, and P. Radpay. "Time-translation invariance symmetry breaking
+        hidden by finite-scale singularities." arXiv:2412.11619 (2024).</li>
+      <li>B. B. Barthélémy Natta, V. Lahoche, D. Ousmane Samary, and P. Radpay. "Ward identities and local potential
+        approximation for large time quantum (2 + p)-spin glass dynamics." arXiv:2411.11089 (2024).</li>
+      <li>V. Lahoche, D. Ousmane Samary, and P. Radpay. "Large time effective kinetics β-functions for quantum (2 +
+        p)-spin glass." Annals of Physics (2025) 170102.</li>
+    </ul>
+  </div>
 
+  <div class="section">
+    <h2>Given Talks</h2>
+    <ul class="tight">
+      <li>"A functional renormalization group approach to quantum spin glasses", Combinatorics and arithmetic for
+        physics 2025, IHES.</li>
+      <li>"The Injective Norm of Random Fermionic States and Skew-Symmetric Tensors", IHES Summer School on Statistical
+        Aspects of Nonlinear Physics (2025), short talk.</li>
+      <li>"The Injective Norm of Random Fermionic States and Skew-Symmetric Tensors", QGB 2025 Conference, LaBRI,
+        Bordeaux.</li>
+      <li>"A renormalization group approach to quantum (2 + p)-spin glasses", Groupe de travail FRG, LPTMC, Sorbonne
+        Université.</li>
+    </ul>
+  </div>
+
+  <p><a href="CV.pdf">Download full CV (PDF)</a></p>
 </body>
+
 </html>
